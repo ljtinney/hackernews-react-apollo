@@ -4,6 +4,7 @@ import './styles/index.css'
 import App from './components/App'
 import { BrowserRouter } from 'react-router-dom'
 import { setContext } from 'apollo-link-context'
+import { AUTH_TOKEN } from './constants'
 
 
 // 1
@@ -30,7 +31,7 @@ const authLink = setContext((_, { headers }) => {
 
 // 3
 const client = new ApolloClient({
-  link: httpLink,
+  link: authLink.concat(httpLink),
   cache: new InMemoryCache()
 })
 
