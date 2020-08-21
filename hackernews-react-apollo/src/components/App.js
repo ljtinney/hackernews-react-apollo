@@ -3,7 +3,7 @@ import LinkList from './LinkList'
 
 class App extends Component {
   render() {
-    return <LinkList />
+    return <CreateLink />
   }
 }
 
