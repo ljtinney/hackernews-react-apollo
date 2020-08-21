@@ -4,6 +4,8 @@ import CreateLink from './CreateLink'
 import Header from './Header'
 import { Switch, Route } from 'react-router-dom'
 import Login from './Login'
+import Search from './Search'
+
 
 
 class App extends Component {
