@@ -5,7 +5,7 @@ import Header from './Header'
 import { Switch, Route } from 'react-router-dom'
 import Login from './Login'
 import Search from './Search'
-
+import { Switch, Route, Redirect } from 'react-router-dom'
 
 
 class App extends Component {
